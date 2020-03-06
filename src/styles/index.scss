@@ -1,0 +1,457 @@
+$break-mid: 1390px;
+$break-small: 750px;
+$break-tiny: 460px; 
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.App { 
+    background-color: #9147FF;
+    text-align: center;
+}
+
+#header {
+
+    .games {
+        height: 100vh;
+        padding: 0vh 5vw 20vh;
+    
+        .game {
+            opacity: 0.6;
+            transition: opacity 1s ease-out;
+    
+            .game-img {
+                width: 17vw;
+                height: 60vh;
+            }
+    
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-mid) {
+        margin-left: 7vw;
+        margin-right: 5vw;
+        .pg-title{
+            width: 90vw;
+        }
+
+        .games {
+            display: flex;
+            .game {
+                width: 30%;
+                height: 40vh;
+                margin: 2vh  1vw;
+                .game-img {
+                    width: 100%;
+                    height: 40vh;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-small) {
+        margin-left: 10vw;
+        margin-right: 0vw;
+        .pg-title {
+            width: 80vw;
+            margin-bottom: 1vh;
+        }
+
+        .games {
+            display: flex;
+            .game {
+                width: 40%;
+                height: 30vh;
+                margin: 1vh  2vw;
+                .game-img {
+                    width: 100%;
+                    height: 30vh;
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: $break-tiny) {
+        
+    }
+}
+
+
+.game-section {
+    height: 100vh;
+
+    .game-container {
+        margin: 5vh 5vw;
+        height: 80%;
+
+        .streamers {
+            width: 50%;
+
+            img {
+                width: 20vw;
+                height: 40%;
+                opacity: 0.6;
+                transition: opacity 1s ease-out;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .information {
+            width: 50%;
+            font-size: 2rem;
+            text-align: left;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-mid) {
+        .game-container {
+            margin-left: 7vw;
+            margin-right: 2vw;
+
+            .streamers {
+                
+                img {
+                    width: 18vw;
+                }
+            }
+
+            .information {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-small) {
+        .game-container {
+            margin-left: 10vw;
+            margin-right: 0vw;
+
+            .streamers {
+                width: 40%;
+
+                img {
+                    width: 20vw;
+                    height: 20%;
+                }
+            }
+
+            .information {
+                font-size: 1.3rem;
+                width: 70%;
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    margin: 3px;
+                }
+
+                div {
+                    a{
+                        svg {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-tiny) {
+        .game-container {
+
+            .information {
+                overflow: scroll;
+                p {
+                    margin: 0px 5px;
+                }
+                .sm {
+                    margin: 0px 5px;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+
+                div {
+                    a {
+                        svg {
+                            width: 30%;
+                            margin: 0;
+                            padding: 0;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    left: 0;
+    width: 55px;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .option-nav {
+        position: relative;
+        text-align: left;
+        transform: scale(1);
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        &:nth-child(1) {
+            top: 5vh;
+            font-size: 30px;
+            height: 50px;
+
+            &:active, :focus, :visited, :hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+
+        &:nth-child(2) {
+            top: 15vh;
+
+            &::after {
+                content: "<a href=https://icons8.com/icon/57606/league-of-legends>League of Legends icon by Icons8</a>";
+                visibility: hidden;
+                font-size: 0px;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 25vh;
+
+            &::after {
+                content: "<a href=https://icons8.com/icon/84531/fortnite>Fortnite icon by Icons8</a>";
+                visibility: hidden;
+                font-size: 0px;
+            }
+        }
+
+        &:nth-child(4) {
+            top: 35vh;
+
+            &::after {
+                content: "<a href=https://icons8.com/icon/50880/world-of-warcraft>World of Warcraft icon by Icons8</a>";
+                visibility: hidden;
+                font-size: 0px;
+            }
+        }
+
+        &:nth-child(5) {
+            top: 45vh;
+
+
+            &::after {
+                content: "<a href=https://icons8.com/icon/32260/rockstar-games>Rockstar Games icon by Icons8</a>";
+                visibility: hidden;
+                font-size: 0px;
+            }
+        }
+
+        &:nth-child(6) {
+            top: 55vh;
+
+            &::after {
+                content: "https://github.com/HearthSim/hs-icons";
+                visibility: hidden;
+                font-size: 0px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-tiny) {
+        width: 45px;
+        .option-nav {
+            a {
+                font-size: 23px;
+                svg {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+#fortnite {
+    position: relative;
+    left: -100vw;
+    opacity: 0;
+    transition: linear 0.5s;
+
+    @media screen and (max-width: $break-mid){
+        .fortnite-title{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            width: 50vw;
+        }
+        
+    }
+
+    @media screen and (max-width: $break-small) {
+        .fortnite-title {
+            width: 60vw;
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+    }
+}
+
+#lol {
+    position: relative;
+    opacity: 0;
+    transition: ease-in-out 1s;
+
+    @media screen and (max-width: $break-mid){
+        .lol-title{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            width: 80vw;
+        }
+        
+    }
+
+    @media screen and (max-width: $break-small) {
+        .lol-title {
+            width: 80vw;
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+    }
+}
+
+#wow {
+    position: relative;
+    left: -100vw;
+    opacity: 0;
+    transition: linear 1s;
+
+    @media screen and (max-width: $break-mid){
+        .wow-title{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            width: 80vw;
+        }
+        
+    }
+
+    @media screen and (max-width: $break-small) {
+        .wow-title {
+            width: 80vw;
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+    }
+}
+
+#gta {
+    position: relative;
+    opacity: 0;
+    transition: ease-in 1s;
+
+    @media screen and (max-width: $break-mid){
+        .gta-title{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            width: 30vw;
+        }
+        
+    }
+
+    @media screen and (max-width: $break-small) {
+        .gta-title {
+            width: 40vw;
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+    }
+}
+
+#hs {
+    position: relative;
+    transform: scale(0);
+    transition: linear 1s;
+
+    @media screen and (max-width: $break-mid){
+        .hs-title{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            width: 60vw;
+        }
+        
+    }
+
+    @media screen and (max-width: $break-small) {
+        .hs-title {
+            width: 70vw;
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+    }
+}
+
+.onScreenF {
+    #fortnite {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+}
+
+
+.onScreenL {
+
+    #lol {
+        opacity: 1 !important;
+    }
+}
+
+.onScreenW {
+
+    #wow {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+}
+
+.onScreenG {
+    #gta {
+        opacity: 1 !important;
+    }
+}
+
+.onScreenH {
+
+    #hs {
+        transform: scale(1);
+    }
+}
