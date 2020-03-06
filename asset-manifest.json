@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ttv-ts-12-19/static/css/main.37f009bf.chunk.css",
+    "main.css": "/ttv-ts-12-19/static/css/main.576a6761.chunk.css",
     "main.js": "/ttv-ts-12-19/static/js/main.964ea4d8.chunk.js",
     "main.js.map": "/ttv-ts-12-19/static/js/main.964ea4d8.chunk.js.map",
     "runtime-main.js": "/ttv-ts-12-19/static/js/runtime-main.2d534a50.js",
@@ -8,9 +8,9 @@
     "static/js/2.3e5d2896.chunk.js": "/ttv-ts-12-19/static/js/2.3e5d2896.chunk.js",
     "static/js/2.3e5d2896.chunk.js.map": "/ttv-ts-12-19/static/js/2.3e5d2896.chunk.js.map",
     "index.html": "/ttv-ts-12-19/index.html",
-    "precache-manifest.c675b5b2efa7bf3be38e930c7910e443.js": "/ttv-ts-12-19/precache-manifest.c675b5b2efa7bf3be38e930c7910e443.js",
+    "precache-manifest.83a5dc1d8d6c0293179ea47997976b96.js": "/ttv-ts-12-19/precache-manifest.83a5dc1d8d6c0293179ea47997976b96.js",
     "service-worker.js": "/ttv-ts-12-19/service-worker.js",
-    "static/css/main.37f009bf.chunk.css.map": "/ttv-ts-12-19/static/css/main.37f009bf.chunk.css.map",
+    "static/css/main.576a6761.chunk.css.map": "/ttv-ts-12-19/static/css/main.576a6761.chunk.css.map",
     "static/js/2.3e5d2896.chunk.js.LICENSE": "/ttv-ts-12-19/static/js/2.3e5d2896.chunk.js.LICENSE",
     "static/media/EsfandTV-image.png": "/ttv-ts-12-19/static/media/EsfandTV-image.76c83708.png",
     "static/media/asmongold-image.png": "/ttv-ts-12-19/static/media/asmongold-image.840d5c11.png",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d534a50.js",
     "static/js/2.3e5d2896.chunk.js",
-    "static/css/main.37f009bf.chunk.css",
+    "static/css/main.576a6761.chunk.css",
     "static/js/main.964ea4d8.chunk.js"
   ]
 }
